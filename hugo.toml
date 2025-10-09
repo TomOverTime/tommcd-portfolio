@@ -1,3 +1,82 @@
-baseURL = 'https://example.org/'
+baseURL = "https://tommcd.com/"
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Tom McDonald Technologies'
+theme = "PaperMod"
+paginate = 10
+enableRobotsTXT = true
+
+[taxonimes]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+      identifier = "services"
+      name = "Services"
+      url = "/services"
+      weight = 10
+    [[menu.main]]
+      identifier = "case-studies"
+      name = "Case Studies"
+      url = "/case-studies/"
+      weight = 20
+    [[menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/about/"
+      weight = 30
+    [[menu.main]]
+      identifier = "contact"
+      name = "Contact"
+      url = "/contract/"
+      weight = 40
+
+[params]
+  env = "production"
+  author = ""
+  description = ""
+  defaultTheme = "" # auto | dark | light
+  showReadingTime = false
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  showToc = false
+
+  # ---- Home: choose ONE of the following blocks ----
+  # 1) Profile Mode (hero with avatar + showCodeCopyButtons)
+  [params.profileMode]
+   enabled = true
+   title = "Turning analytics into action"
+   subtitle = "I help fintech & SaaS teams implement GA4 & Segment, build reliable data pipelines/dashboards, and run clean experiments."
+   imageUrl = "images/tom-avatar.png" # add later to /static/images
+   imageTitle = "Tom McDonald"
+   imageWidth = 120
+   imageHeight = 120
+
+[[params.profileMode.buttons]]
+  name = "Services"
+  url = "/services"
+[[params.profileMode.buttons]]
+  name = "Case Studies"
+  url = "/case-studies/"
+[[params.profileMode.buttons]]
+  name = "About"
+  url = "/about/"
+[[params.profileMode.buttons]]
+  name = "Contact"
+  url = "/contact/"
+
+# 2) If you prefer a text intro instead of profile mode later:
+# [params.homeInfoParams]
+#   Title = "Turning analytics into action"
+#   Content = "GA4 & Segment implementation, reliable data pipelines/dashboards, and experimentation QA"
+# (Set profileMode.enabled=false if you switch to this.)
+
+# Social icons
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/TomOverTime"
+[[params.socialIcons]]  
+  name = "linkedIn"
+  url = "https://www.linkedin.com/in/tom-h-mcdonald"
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:hello@tommcd.com"
