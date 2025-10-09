@@ -2,7 +2,8 @@ baseURL = "https://tommcd.com/"
 languageCode = 'en-us'
 title = 'Tom McDonald Technologies'
 theme = "PaperMod"
-paginate = 10
+[pagination]
+  pagerSize
 enableRobotsTXT = true
 
 [taxonimes]
