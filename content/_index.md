@@ -1,5 +1,5 @@
 ---
-title = "Home"
+title: "Home"
 description: "Analytics implementation & data engineering for fintech and SaaS."
 draft: false
 ---
