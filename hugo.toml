@@ -28,7 +28,7 @@ enableRobotsTXT = true
     [[menu.main]]
       identifier = "contact"
       name = "Contact"
-      url = "/contract/"
+      url = "/contact/"
       weight = 40
 
 [params]
