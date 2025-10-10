@@ -87,3 +87,6 @@ enableRobotsTXT = true
 [[params.socialIcons]]
   name = "email"
   url = "mailto:hello@tommcd.com"
+
+[params.assets]
+  css = ["css/extened/layout-fixes.css"]

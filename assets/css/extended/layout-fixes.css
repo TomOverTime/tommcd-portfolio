@@ -1,0 +1,9 @@
+/* Remove extra space left by missing breadcrumbs */
+.single .post-header {
+  margin-top: 1.5rem; /* tighten header spacing */
+}
+
+/* Optional: balance spacing below the title too */
+.single .post-title {
+  margin-bottom: 0.75rem;
+}
