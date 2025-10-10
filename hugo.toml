@@ -43,7 +43,7 @@ enableRobotsTXT = true
   description = ""
   defaultTheme = "" # auto | dark | light
   showReadingTime = false
-  showBreadCrumbs = true
+  showBreadCrumbs = false
   showCodeCopyButtons = true
   showToc = false
 
