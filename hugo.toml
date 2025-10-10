@@ -2,34 +2,40 @@ baseURL = "https://tommcd.com/"
 languageCode = 'en-us'
 title = 'Tom McDonald Technologies'
 theme = "PaperMod"
-[pagination]
-  pagerSize = 10
 enableRobotsTXT = true
 
-[taxonimes]
+[pagination]
+  pagerSize = 10
+
+[taxonomies]
   tag = "tags"
 
 [menu]
   [[menu.main]]
-      identifier = "services"
-      name = "Services"
-      url = "/services"
-      weight = 10
-    [[menu.main]]
-      identifier = "case-studies"
-      name = "Case Studies"
-      url = "/case-studies/"
-      weight = 20
-    [[menu.main]]
-      identifier = "about"
-      name = "About"
-      url = "/about/"
-      weight = 30
-    [[menu.main]]
-      identifier = "contact"
-      name = "Contact"
-      url = "/contact/"
-      weight = 40
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "services"
+    name = "Services"
+    url = "/services"
+    weight = 20
+  [[menu.main]]
+    identifier = "case-studies"
+    name = "Case Studies"
+    url = "/case-studies/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 50
 
 [params]
   env = "production"
@@ -52,18 +58,18 @@ enableRobotsTXT = true
    imageWidth = 120
    imageHeight = 120
 
-[[params.profileMode.buttons]]
-  name = "Services"
-  url = "/services"
-[[params.profileMode.buttons]]
-  name = "Case Studies"
-  url = "/case-studies/"
-[[params.profileMode.buttons]]
-  name = "About"
-  url = "/about/"
-[[params.profileMode.buttons]]
-  name = "Contact"
-  url = "/contact/"
+  [[params.profileMode.buttons]]
+    name = "Services"
+    url = "/services"
+  [[params.profileMode.buttons]]
+    name = "Case Studies"
+    url = "/case-studies/"
+  [[params.profileMode.buttons]]
+    name = "About"
+    url = "/about/"
+  [[params.profileMode.buttons]]
+    name = "Contact"
+    url = "/contact/"
 
 # 2) If you prefer a text intro instead of profile mode later:
 # [params.homeInfoParams]
