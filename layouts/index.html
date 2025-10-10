@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main id="main" class="main">
+  {{/* --- 1. Render the PaperMod profileMode hero --- */}} {{ partial
+  "index_profile.html" . }} {{/* --- 2. Render the Markdown body from
+  content/_index.md --- */}} {{ if eq .RelPermalink "/" }}
+  <article class="single">
+    <div class="post-content">{{ .Content }}</div>
+  </article>
+  {{ end }}
+</main>
+{{ end }}
